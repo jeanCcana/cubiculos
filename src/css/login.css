@@ -1,0 +1,41 @@
+/* Input - Login */
+.inputCustom {
+  display: block;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  outline: 0;
+  border: 0px;
+  border-radius: 0px;
+  color: #c31432;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Botton Ingresar - Login */
+.btnCustom {
+  display: block;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  transition: 0.5s;
+  background-image: linear-gradient(to left, #240b36, #c31432);
+  color: white !important; /*Sobreescribiendo bootstrap*/
+  text-decoration-line: none !important; /*Sobreescribiendo bootstrap*/
+}
+
+.btnCustom:hover {
+  background-position: right; /* change the direction of the change here */
+}
+
+/* Logo - Login */
+.logo {
+  width: 200px;
+}
+
+@media (min-width: 576px) {
+  .logo {
+    width: 350px;
+  }
+}

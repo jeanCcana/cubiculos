@@ -1,0 +1,148 @@
+body {
+  padding-top: 4.5rem;
+}
+
+td {
+  vertical-align: top;
+  padding: 0px;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+.m {
+  background-color: #dddcdc;
+}
+
+.cubiculo {
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.disp {
+  background-color: #ddffd9;
+}
+
+.noDisp {
+  background-color: #ffe5e5;
+}
+
+.noPermt {
+  background-color: #d9dcff;
+}
+
+.indCubi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.p0 {
+  width: 36px;
+}
+
+.p90 {
+  width: 36px;
+  transform: rotate(90deg);
+}
+
+.p180 {
+  width: 36px;
+  transform: rotate(180deg);
+}
+
+.pv {
+  width: 37px;
+  height: 18px;
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+
+
+.scrollable-menu::-webkit-scrollbar {
+background-color: #fff
+}
+
+.scrollable-menu::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+.scrollable-menu::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .5);
+}
+
+@media (min-width: 576px) {
+  .p0 {
+    width: 50px;
+  }
+
+  .p90 {
+    width: 50px;
+    transform: rotate(90deg);
+  }
+
+  .p180 {
+    width: 50px;
+    transform: rotate(180deg);
+  }
+
+  .pv {
+    width: 51px;
+    height: 26px;
+  }
+}
+
+@media (min-width: 768px) {
+  .p0 {
+    width: 70px;
+  }
+
+  .p90 {
+    width: 70px;
+    transform: rotate(90deg);
+  }
+
+  .p180 {
+    width: 70px;
+    transform: rotate(180deg);
+  }
+
+  .pv {
+    width: 71px;
+    height: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .p0 {
+    width: 80px;
+  }
+
+  .p90 {
+    width: 80px;
+    transform: rotate(90deg);
+  }
+
+  .p180 {
+    width: 80px;
+    transform: rotate(180deg);
+  }
+
+  .pv {
+    width: 81px;
+    height: 41px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
