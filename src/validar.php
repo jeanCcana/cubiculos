@@ -31,13 +31,13 @@ if (isset($_POST['btnIngresar'])) {
             session_start();
             session_destroy();
             $msj = "Usuario inhabilitado";
-            header('location: index.php');
+            header('location: ../index.php');
         }
     } else {
         session_start();
         session_destroy();
         $msj = "Usuario o clave incorrecto";
-        header('location: index.php');
+        header('location: ../index.php');
     }
 }
 
