@@ -74,7 +74,7 @@ $_SESSION['fecha']=$fecha;
             <h4>Información de la reserva</h4>
             <hr/>
         </div>
-        <div>
+        <div class="card shadow p-4">
             <form action="grabar_reserva.php" method="post">
 
                 Capacidad: <input type='text' value='<?= $capacidad ?>' name="txtCapacidad" style="border:0;" readonly/><br>
@@ -86,8 +86,9 @@ $_SESSION['fecha']=$fecha;
                 Integrantes:<br>
                 <?= $cod ?> - <?= $usu ?><br>
 
-
-                <input type="submit" name="confirmar" value="Reservar"/>
+                <div class="d-flex justify-content-center">
+                <input class="btn btn-danger mt-3" type="submit" name="confirmar" value="Reservar"/>
+                </div>
             </form>
         </div>
     </div>

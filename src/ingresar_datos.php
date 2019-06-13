@@ -91,13 +91,13 @@ if ($tipo_usuario == 'administrador') {
                     <?php for ($i = 0; $i < $capacidad; $i++) { ?>
                         <?= $input ?>
                     <?php } ?>
-                    <input type="submit" name="enviar"/>
+                    <input class="btn btn-danger mt-2" type="submit" name="enviar"/>
                 <?php } else { ?>
                     <input type='text' value='<?= $cod ?>' readonly/><label><?= $usu ?></label><br>
                     <?php for ($i = 1; $i < $capacidad; $i++) { ?>
                         <?= $input ?>
                     <?php } ?>
-                    <input type="submit" name="enviar"/>
+                    <input class="btn btn-danger mt-3" type="submit" name="enviar"/>
                 <?php } ?>
             </form>
         </div>
