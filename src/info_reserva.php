@@ -80,7 +80,7 @@ $_SESSION['fecha']=$fecha;
                 Capacidad: <input type='text' value='<?= $capacidad ?>' name="txtCapacidad" style="border:0;" readonly/><br>
                 Fecha: <input type='text' value='<?= $fecha ?>' name="txtFecha" style="border:0;"  readonly/><br>
                 Cubiculo: <input type='text' value='<?= $cubiculo ?>'  name="txtCubiculo" style="border:0;"  readonly/><br>
-                Hora Inicio: <input type='text' value='<?= $hora_fin ?>' name="txtHI" style="border:0;"  readonly/><br>
+                Hora Inicio: <input type='text' value='<?= $hora_inicio ?>' name="txtHI" style="border:0;"  readonly/><br>
                 Hora Fin: <input type='text' value='<?= $hora_fin ?>'  name="txtHF" style="border:0;" readonly/><br>
 
                 Integrantes:<br>
