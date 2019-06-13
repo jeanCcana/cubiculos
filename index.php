@@ -23,7 +23,7 @@
             <div class="card shadow-lg">
                 <div class="card-body ">
                     <img src="src/img/logo_fia.png" class="logo p-3 " alt="logo"/>
-                    <form action="src/validar_login.php" method="post">
+                    <form action="src/validar.php" method="post">
                         <div class="form-group">
                             <label>Email</label>
                             <input
