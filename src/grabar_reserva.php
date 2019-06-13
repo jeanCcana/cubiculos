@@ -31,8 +31,8 @@ $sql2="INSERT INTO alumnos_reservas (id_reserva,codigo_alumno) VALUES ('$ultimoI
 $datos1=$base->ejecutar($sql2);
 
 if ($datos1){
-	echo '<div class="container my-4 ">
-    <div class="row justify-content-center">
+	echo '<div class="container vh-100 d-flex align-items-center justify-content-center ">
+    <div class="card shadow p-4 row justify-content-center">
         <div class="col-12 text-center">
             <h4>Cubiculo Reservado</h4>
             <a href="reserva.php">Inicio</a>
