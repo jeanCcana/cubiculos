@@ -11,11 +11,11 @@ $cod = $_SESSION["cod"];
 $tipo_usuario = $_SESSION["tipo_usuario"];
 
 if ($tipo_usuario == "administrador") {
-    $sql = "select CONCAT(alumnos.nombre,' ',alumnos.apellido_paterno,' ',alumnos.apellido_materno) as nom_ape,alumnos_reservas.codigo_alumno, SUBSTRING(hora_inicio,1,10) as dia,SUBSTRING(TIMEDIFF(hora_fin,hora_inicio),1,5) as duracion,reservas.id_reserva,SUBSTRING(hora_inicio,11,6) as hora_inicio,SUBSTRING(hora_fin,11,6) as hora_fin,id_cubiculo 
+    $sql = "select CONCAT(alumnos.nombre,' ',alumnos.apellido_paterno,' ',alumnos.apellido_materno) as nom_ape,alumnos_reservas.codigo_alumno, SUBSTRING(hora_inicio,1,10) as dia,SUBSTRING(TIMEDIFF(hora_fin,hora_inicio),1,5) as duracion,reservas.id_reserva,SUBSTRING(hora_inicio,11,6) as hora_inicio,SUBSTRING(hora_fin,11,6) as hora_fin,id_cubiculo
 from alumnos_reservas join reservas on alumnos_reservas.id_reserva=reservas.id_reserva join alumnos on alumnos_reservas.codigo_alumno=alumnos.codigo_alumno where reservas.estado='1'";
 
 } else {
-    $sql = "select CONCAT(alumnos.nombre,' ',alumnos.apellido_paterno,' ',alumnos.apellido_materno) as nom_ape,alumnos_reservas.codigo_alumno, SUBSTRING(hora_inicio,1,10) as dia,SUBSTRING(TIMEDIFF(hora_fin,hora_inicio),1,5) as duracion,reservas.id_reserva,SUBSTRING(hora_inicio,11,6) as hora_inicio,SUBSTRING(hora_fin,11,6) as hora_fin,id_cubiculo 
+    $sql = "select CONCAT(alumnos.nombre,' ',alumnos.apellido_paterno,' ',alumnos.apellido_materno) as nom_ape,alumnos_reservas.codigo_alumno, SUBSTRING(hora_inicio,1,10) as dia,SUBSTRING(TIMEDIFF(hora_fin,hora_inicio),1,5) as duracion,reservas.id_reserva,SUBSTRING(hora_inicio,11,6) as hora_inicio,SUBSTRING(hora_fin,11,6) as hora_fin,id_cubiculo
 from alumnos_reservas join reservas on alumnos_reservas.id_reserva=reservas.id_reserva join alumnos on alumnos_reservas.codigo_alumno=alumnos.codigo_alumno where alumnos_reservas.codigo_alumno=$cod &&  reservas.estado='1'";
 }
 $datos = $base->consultar($sql);
@@ -66,7 +66,7 @@ $datos = $base->consultar($sql);
                        href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         <?= $usu . "-" . $tipo_usuario ?></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="index.php">Salir</a>
+                    <a class="dropdown-item" href="../">Salir</a>
                     </div>
                 </li>
             </ul>

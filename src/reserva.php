@@ -103,7 +103,7 @@ if (isset($_POST['btnBuscar'])) {
                        href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         <?= $usu . "-" . $tipo_usuario ?></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="index.php">Salir</a>
+                        <a class="dropdown-item" href="../">Salir</a>
                     </div>
                 </li>
             </ul>

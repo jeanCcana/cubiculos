@@ -7,10 +7,10 @@
     <link rel="icon" type="image/png" href="img/logo.ico"/>
     <link
             rel="stylesheet"
-            href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+            href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="css/general.css"/>
-    <link rel="stylesheet" href="css/login.css"/>
+    <link rel="stylesheet" href="src/css/general.css"/>
+    <link rel="stylesheet" href="src/css/login.css"/>
     <title>USMP - Reserva de Cubiculos</title>
 </head>
 
@@ -22,8 +22,8 @@
         <div class="col-12">
             <div class="card shadow-lg">
                 <div class="card-body ">
-                    <img src="img/logo_fia.png" class="logo p-3 " alt="logo"/>
-                    <form action="validar_login.php" method="post">
+                    <img src="src/img/logo_fia.png" class="logo p-3 " alt="logo"/>
+                    <form action="src/validar_login.php" method="post">
                         <div class="form-group">
                             <label>Email</label>
                             <input
@@ -52,10 +52,10 @@
     </div>
 </div>
 </body>
-<link rel="stylesheet" href="../node_modules/jquery/dist/jquery.min.js"/>
-<link rel="stylesheet" href="../node_modules/popper.js/dist/popper.min.js"/>
+<link rel="stylesheet" href="node_modules/jquery/dist/jquery.min.js"/>
+<link rel="stylesheet" href="node_modules/popper.js/dist/popper.min.js"/>
 <link
         rel="stylesheet"
-        href="../node_modules/bootstrap/dist/js/bootstrap.min.js"
+        href="node_modules/bootstrap/dist/js/bootstrap.min.js"
 />
 </html>
