@@ -9,7 +9,7 @@ $clave = $_SESSION["clave"];
 $usu = $_SESSION["usu"];
 $cod = $_SESSION["cod"];
 $tipo_usuario = $_SESSION["tipo_usuario"];
-
+//
 if (isset($_POST['btnBuscar'])) {
     $capacidad = $_POST['inputCapacidad'];
     $hora_inicio = $_POST['inputHoraInicio'];
